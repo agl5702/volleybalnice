@@ -1,0 +1,57 @@
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+.landing {
+  margin: auto;
+  text-align: center;
+  width: 300px;
+}
+.fondo {
+  width: 100%;
+}
+.title {
+  font-family: "Bebas Neue", sans-serif;
+  color: #171c39;
+  font-size: 64;
+}
+
+.btn-login {
+  background-color: #171c39;
+  margin: auto;
+  margin-top: 10px;
+  width: 280px;
+  padding: 8px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+}
+.btn-register {
+  background-color: #d6d5d5;
+  margin: auto;
+  margin-top: 4px;
+  width: 280px;
+  padding: 8px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  color: #000000;
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+}
+.btn-login:hover {
+  background-color: #202022;
+}
+.btn-register:hover {
+  background-color: #202022;
+  color: #fff;
+}

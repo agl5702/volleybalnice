@@ -1,0 +1,131 @@
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-image: url("./fondo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.signin {
+  margin: auto;
+  margin-top: 100px;
+  text-align: center;
+  background-color: #fff;
+  width: 394px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.signin img {
+  margin: auto;
+  margin-top: 25px;
+}
+.signin input {
+  width: 300px;
+  margin: auto;
+  padding: 8px;
+  margin: 10px;
+  background-color: #d6d5d5;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  color: #322d2d;
+}
+/* .signin input:focus {
+  border-bottom: 1px solid #252a49;
+} */
+.email {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.password {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.btn-login {
+  background-color: #171c39;
+  margin: auto;
+  margin-top: 30px;
+  width: 280px;
+  padding: 8px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.btn-login:hover {
+  background-color: #202022;
+}
+
+.textfooter {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  padding: 20px;
+  color: #000000;
+}
+.textfooter p {
+  margin: 6px;
+}
+.textfooter a {
+  text-decoration: none;
+  color: #374079;
+}
+
+@media (max-width: 468px) {
+  body {
+    background-image: url("./fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+  .signin {
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+    background-color: #fff;
+    width: 300px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .signin input {
+    width: 250px;
+  }
+  .btn-login {
+    background-color: #171c39;
+    width: 240px;
+    padding: 8px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+  }
+}
+@media (min-width: 468px) {
+  body {
+    background-image: url("./fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+}
