@@ -137,8 +137,32 @@ svg {
     margin-left: 0.5rem;
   }
 }
-
-@media (max-width: 480px) {
+.events ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  padding: 10px;
+  margin: auto;
+  margin-left: 20px;
+}
+.events ul img {
+  width: 50px;
+  height: 45px;
+  margin: auto;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.events ul img:hover {
+  scale: 1.05;
+}
+.title-events {
+  margin-left: 20px;
+  margin-top: 10px;
+  font-size: 30px;
+  color: #20274e;
+  font-family: "Bebas Neue", sans-serif;
+}
+@media (max-width: 580px) {
   .logo {
     width: 80px; /* Reduce el tamaño del logo en pantallas más pequeñas */
   }
@@ -195,6 +219,24 @@ svg {
   flex-direction: column;
   width: 50%;
 }
+.desvideo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+}
+.desvideo img {
+  margin-left: 10px;
+  margin-top: 0px;
+  padding: 0px;
+  width: 30px;
+  height: 30px;
+}
+.desvideo-title {
+  margin: 5px;
+  margin-left: 15px;
+  font-size: 14px;
+}
 .title-videos {
   margin-left: 20px;
   font-size: 30px;
@@ -202,11 +244,168 @@ svg {
   font-family: "Bebas Neue", sans-serif;
 }
 .allvideos {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+  align-content: center;
 }
 .allvideos iframe {
-  border-radius: 20px;
+  border-radius: 10px;
   margin: 10px;
-  width: 200px;
+  width: 250px;
+}
+
+@media (max-width: 820px) {
+  .content {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .slider {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .diapositivas {
+    margin: auto;
+    border-radius: 20px;
+    min-width: 90%;
+    max-width: 90%;
+  }
+  .diapositivas img {
+    border-radius: 20px;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 300px;
+    max-height: 300px;
+  }
+  .title-videos {
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 30px;
+    color: #20274e;
+    font-family: "Bebas Neue", sans-serif;
+  }
+  .videos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+  }
+
+  .allvideos {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    align-content: center;
+  }
+  .allvideos iframe {
+    border-radius: 10px;
+    margin: 10px;
+    width: 350px;
+    height: 250px;
+  }
+}
+@media (max-width: 540px) {
+  .content {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .slider {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .diapositivas {
+    margin: auto;
+    border-radius: 20px;
+    min-width: 90%;
+    max-width: 90%;
+  }
+  .diapositivas img {
+    border-radius: 20px;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 260px;
+    max-height: 260px;
+  }
+  .title-videos {
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 30px;
+    color: #20274e;
+    font-family: "Bebas Neue", sans-serif;
+  }
+  .videos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+  }
+  .allvideos {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 10px;
+    align-content: center;
+  }
+  .allvideos iframe {
+    border-radius: 10px;
+    margin: 10px;
+    width: 450px;
+    height: 350px;
+  }
+}
+@media (min-width: 1368px) {
+  .slider {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-left: 10px;
+  }
+  .diapositivas {
+    margin: auto;
+    border-radius: 20px;
+    min-width: 100%;
+    max-width: 100%;
+  }
+  .diapositivas img {
+    border-radius: 20px;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 360px;
+    max-height: 360px;
+  }
+  .title-videos {
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 30px;
+    color: #20274e;
+    font-family: "Bebas Neue", sans-serif;
+  }
+  .videos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+  }
+  .allvideos {
+    display: grid;
+    grid-template-columns: auto auto;
+
+    gap: 10px;
+    align-content: center;
+  }
+  .allvideos iframe {
+    border-radius: 10px;
+
+    margin: 10px;
+    width: 350px;
+    height: 250px;
+  }
 }
