@@ -69,48 +69,49 @@ svg {
 .text {
   width: 100%;
   display: flex;
-  margin-left: 130px;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
+  margin: auto;
+  text-align: center;
 }
 .category {
-  align-items: center;
-  align-content: center;
-  justify-content: center;
   width: 100%;
+  margin: auto !important;
+  text-align: center;
 }
 .category ul {
+  margin: auto !important;
+
   width: 100%;
+  margin: auto;
+  text-align: center;
   display: flex;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
   list-style: none;
 }
 .category a {
+  margin: auto;
+  text-align: center;
   width: 100%;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
   text-decoration: none;
   color: #20274e;
 }
 .category1 {
+  margin: auto !important;
+
   padding: 10px 15px 10px 15px;
   border-bottom-left-radius: 20px;
   border-top-right-radius: 20px;
   background-color: #20274e;
 }
 .category1 {
+  margin: auto !important;
+
   color: #ffffff !important; /* Forzar el color blanco en el enlace */
 }
 .text ul {
   display: flex;
-  justify-content: start;
+  margin: auto !important;
+  justify-content: center;
   list-style: none;
   align-items: center;
-  margin-left: 130px;
 }
 .text ul li {
   text-align: center;
@@ -182,7 +183,7 @@ svg {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 818px) {
   .middle {
     margin-left: 10px;
     width: 30%; /* Oculta la barra de búsqueda en pantallas pequeñas */
@@ -198,7 +199,9 @@ svg {
     width: 20%;
     justify-content: space-between;
   }
-
+  .text {
+    display: none;
+  }
   .right {
     justify-content: center;
   }
