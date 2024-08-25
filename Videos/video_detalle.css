@@ -1,0 +1,659 @@
+body {
+  background-color: #ffffff;
+}
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+/* Estilos del Navbar */
+nav {
+  width: 100%;
+  padding: 0.5rem;
+  box-shadow: 0 0 0.1rem rgb(210, 210, 210);
+}
+
+nav ul {
+  margin-right: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2px;
+}
+.burgermenu,
+.search-icon,
+.home-menu,
+.article-menu,
+.video-menu,
+.user-menu {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: grid;
+  place-items: center;
+}
+
+svg {
+  width: 24px;
+  height: 24px;
+}
+
+.left,
+.middle,
+.search-container,
+.right {
+  display: flex;
+  align-items: end;
+}
+
+.right a {
+  color: #000000;
+}
+
+.indormens {
+  background-color: #20274e;
+}
+
+.right a:hover {
+  background-color: rgb(203, 204, 204);
+  border-radius: 2px;
+  color: #20274e;
+}
+
+.text {
+  width: 100%;
+  display: flex;
+  margin: auto;
+  text-align: center;
+}
+
+.category {
+  width: 100%;
+  margin: auto !important;
+  text-align: center;
+}
+
+.category ul {
+  margin: auto !important;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  list-style: none;
+}
+
+.category a {
+  margin: auto;
+  text-align: center;
+  font-size: 14px;
+  width: 100%;
+  padding: 8px;
+  text-decoration: none;
+  color: #20274e;
+}
+
+.category1 {
+  margin: auto !important;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: #20274e;
+  color: #ffffff !important; /* Forzar el color blanco en el enlace */
+}
+
+.text ul {
+  display: flex;
+  margin: auto !important;
+  justify-content: center;
+  list-style: none;
+  align-items: center;
+}
+
+.text ul li {
+  text-align: center;
+  margin: 5px;
+  padding: 0;
+}
+
+.separator img {
+  width: 10px;
+  height: 20px;
+}
+
+.logo {
+  width: 100px;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.search-container {
+  width: 500px;
+  height: 40px;
+  position: relative;
+}
+
+.search-container input {
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+  padding: 0 0.5rem;
+  outline: none;
+  border-left: 1px solid rgb(210, 210, 210);
+  border-top: 1px solid rgb(210, 210, 210);
+  border-bottom: 1px solid rgb(210, 210, 210);
+  border-right: none;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  box-shadow: inset 0 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
+}
+
+.search-container .search-icon {
+  width: 70px;
+  background-color: rgb(239, 239, 239);
+  transition: all 1s;
+  position: relative;
+}
+
+.search-container .search-icon:hover {
+  background-color: rgb(210, 210, 210);
+}
+
+.home-menu,
+.article-menu,
+.video-menu,
+.user-menu {
+  border-radius: 50%;
+  margin-left: 1rem;
+  background-color: rgb(239, 239, 239);
+  position: relative;
+}
+.video {
+  width: 65%;
+  height: 500px;
+  position: sticky;
+  margin-top: 0px;
+}
+.desvideo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+}
+.desvideo img {
+  margin-left: 10px;
+  margin-top: 0px;
+  padding: 0px;
+  width: 30px;
+  height: 30px;
+}
+.img-user {
+  margin-top: 0px;
+  padding: 0px;
+  width: 30px;
+  height: 30px;
+}
+.desvideo-title {
+  margin: 5px;
+  margin-left: 15px;
+  font-size: 14px;
+}
+.video iframe {
+  border-radius: 10px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 90%;
+}
+.recomendation {
+  width: 35%;
+  margin: 0px 0px 0px 10px;
+}
+.video-recomended {
+  margin: 10px;
+  display: flex;
+}
+.video-recomended iframe {
+  border-radius: 5px;
+  width: 200px;
+  height: 120px;
+}
+.desvideo2 {
+  display: flex;
+  flex-direction: column;
+}
+.desvideo-description {
+  margin: 5px;
+  margin-left: 15px;
+  font-size: 14px;
+}
+
+.videos-recomended {
+  overflow-y: scroll; /* Asegúrate de que el scroll esté habilitado */
+  height: 100vh; /* Ajusta la altura según sea necesario */
+  margin-top: 20px;
+  /* Opcional: agrega un borde o algún estilo visual para ver el contenedor */
+  border: 1px solid #ddd;
+  padding: 10px; /* Opcional: agrega algo de relleno */
+}
+.comment {
+  margin-top: 20px;
+  padding: 0;
+}
+
+.comment-list {
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+}
+
+.comment-item {
+  margin: 0px;
+  display: flex;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.comment-author {
+  margin: 0px;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.comment-text {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+}
+.comment-text a {
+  color: #20274e;
+  font-weight: 500;
+  text-decoration: none;
+}
+.commentuser {
+  margin: 0px;
+  padding: 0;
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+}
+.comment-form {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.comment-form textarea {
+  width: 50%;
+  height: 40px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  outline: none;
+  margin-left: 10px;
+  resize: none;
+}
+
+.comment-form button {
+  display: inline-block;
+  background-color: #20274e;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-left: 10px;
+
+  cursor: pointer;
+}
+
+.comment-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 1024px) {
+  .search-container {
+    width: 250px; /* Reduce el tamaño del buscador en pantallas medianas */
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .text {
+    display: none;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .video {
+    width: 100%;
+    height: auto;
+    position: sticky;
+    margin-top: 0px;
+    padding: 0;
+    margin: 0;
+  }
+  .video iframe {
+    border-radius: 10px;
+    width: 100%;
+    height: 500px;
+  }
+  .recomendation {
+    width: 100%;
+    margin: 0px 0px 0px 10px;
+  }
+  .videos-recomended {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
+  .video-recomended {
+    display: flex;
+    flex-direction: column;
+    margin: 8px;
+  }
+  .video-recomended iframe {
+    border-radius: 5px;
+    width: 200px;
+    height: 120px;
+  }
+  .desvideo2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .desvideo-description {
+    margin: 5px;
+    margin-left: 15px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 888px) {
+  .middle {
+    margin-left: 10px;
+    width: 30%; /* Oculta la barra de búsqueda en pantallas pequeñas */
+  }
+  .left,
+  .right {
+    justify-items: center;
+    width: 20%;
+    justify-content: space-between;
+  }
+  .text {
+    display: none;
+  }
+  .right {
+    justify-content: center;
+  }
+  .home-menu,
+  .article-menu,
+  .video-menu {
+    display: none;
+    margin-left: 0.5rem;
+  }
+  .user-menu span {
+    margin-top: 10px;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .text {
+    display: none;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .video {
+    width: 100%;
+    height: auto;
+    position: sticky;
+    margin-top: 0px;
+    padding: 0;
+    margin: 0;
+  }
+  .video iframe {
+    border-radius: 10px;
+    width: 100%;
+    height: 400px;
+  }
+  .recomendation {
+    width: 100%;
+    margin: 0px 0px 0px 10px;
+  }
+  .videos-recomended {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  .video-recomended {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
+  .video-recomended iframe {
+    border-radius: 5px;
+    width: 200px;
+    height: 120px;
+  }
+  .desvideo2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .desvideo-description {
+    margin: 5px;
+    margin-left: 15px;
+    font-size: 14px;
+  }
+}
+
+.events ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  padding: 10px;
+  margin: auto;
+  margin-left: 20px;
+}
+
+.events ul img {
+  width: 60px;
+  height: 55px;
+  margin: auto;
+  margin-left: 40px;
+  cursor: pointer;
+}
+@media (max-width: 698px) {
+  .middle {
+    margin-left: 10px;
+    width: 30%; /* Oculta la barra de búsqueda en pantallas pequeñas */
+  }
+  .left,
+  .right {
+    justify-items: center;
+    width: 20%;
+    justify-content: space-between;
+  }
+  .text {
+    display: none;
+  }
+  .right {
+    justify-content: center;
+  }
+  .home-menu,
+  .article-menu,
+  .video-menu {
+    display: none;
+    margin-left: 0.5rem;
+  }
+  .user-menu span {
+    margin-top: 10px;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .text {
+    display: none;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .video {
+    width: 100%;
+    height: auto;
+    position: sticky;
+    margin-top: 0px;
+    padding: 0;
+    margin: 0;
+  }
+  .video iframe {
+    border-radius: 10px;
+    width: 100%;
+    height: 400px;
+  }
+  .recomendation {
+    width: 100%;
+    margin: 0px 0px 0px 10px;
+  }
+  .videos-recomended {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .video-recomended {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
+  .video-recomended iframe {
+    border-radius: 5px;
+    width: 200px;
+    height: 120px;
+  }
+  .desvideo2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .desvideo-description {
+    margin: 5px;
+    margin-left: 15px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 580px) {
+  .logo {
+    width: 80px; /* Reduce el tamaño del logo en pantallas más pequeñas */
+  }
+  .search-container input {
+    display: none; /* Reduce el tamaño del buscador en pantallas más pequeñas */
+  }
+  .search-container .search-icon {
+    width: 70px;
+    background-color: rgb(239, 239, 239);
+    position: relative;
+  }
+  .search-icon {
+    margin-left: 150%;
+  }
+  .user-menu {
+    margin-left: 100%;
+  }
+  .home-menu,
+  .article-menu,
+  .video-menu {
+    display: none;
+    margin-left: 0.5rem;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .text {
+    display: none;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .video {
+    width: 100%;
+    height: auto;
+    position: sticky;
+    margin-top: 0px;
+    padding: 0;
+    margin: 0;
+  }
+  .video iframe {
+    border-radius: 10px;
+    width: 100%;
+    height: 350px;
+    margin: 0;
+    padding: 0;
+  }
+  .recomendation {
+    width: 100%;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  .videos-recomended {
+    display: grid;
+    grid-template-columns: auto;
+    margin: auto !important;
+    padding: 0;
+  }
+  .video-recomended {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+  }
+  .video-recomended iframe {
+    border-radius: 5px;
+    width: 100%;
+    height: 90%;
+  }
+  .desvideo2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .desvideo-description {
+    margin: 5px;
+    margin-left: 10px;
+    font-size: 14px;
+  }
+}
+
+/* Ocultar menú hamburguesa en pantallas grandes */
+@media (min-width: 769px) {
+  .burgermenu {
+    display: none;
+  }
+  .search-container .search-icon {
+    width: 70px;
+    background-color: rgb(239, 239, 239);
+    position: relative;
+  }
+  .middle {
+    display: flex;
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  display: flex;
+}
