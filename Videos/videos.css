@@ -515,9 +515,8 @@ svg {
   }
   .allvideos iframe {
     border-radius: 10px;
-
     margin: 10px;
-    width: 350px;
+    width: 90vw;
     height: 250px;
   }
 }
