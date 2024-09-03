@@ -58,6 +58,9 @@ svg {
   border-radius: 2px;
   color: #20274e;
 }
+.right a span:hover {
+  scale: 1.02;
+}
 
 .text {
   width: 100%;
@@ -245,45 +248,51 @@ svg {
   display: none;
 }
 .accordion-item {
-  border-radius: 50px;
+  margin-left: 10px;
 }
 .accordion-header {
-  margin-left: 10px;
+  border-radius: 10px;
   margin-top: 10px;
   outline: none;
   border: none;
   box-shadow: none;
-  background-color: #bdbbbb; /* Opcional: asegura que el fondo sea transparente */
+  background-color: #ccccccbd; /* Opcional: asegura que el fondo sea transparente */
 }
 .accordion-button {
+  border-radius: 10px;
+
   border: none; /* Elimina cualquier borde del botón */
-  background-color: #bdbbbb; /* Opcional: asegura que el fondo sea transparente */
+  background-color: #ccccccbd; /* Opcional: asegura que el fondo sea transparente */
 
   outline: none; /* Elimina el borde de enfoque */
   box-shadow: none; /* Elimina cualquier sombra */
 }
 .accordion-button button {
   border-radius: 10px;
+  background-color: #ccccccbd; /* Opcional: asegura que el fondo sea transparente */
 }
 
 .accordion-button:focus {
+  border-radius: 10%;
   outline: none; /* Elimina el borde de enfoque */
   box-shadow: none; /* Elimina cualquier sombra */
-  background-color: #bdbbbb; /* Opcional: asegura que el fondo sea transparente */
+  background-color: #ccccccbd; /* Opcional: asegura que el fondo sea transparente */
 }
 
 .accordion-button:active {
+  border-radius: 10px;
   outline: none; /* Elimina el borde de enfoque */
   box-shadow: none; /* Elimina cualquier sombra */
-  background-color: #bdbbbb; /* Opcional: asegura que el fondo sea transparente */
+  background-color: #ccccccbd; /* Opcional: asegura que el fondo sea transparente */
 }
 
 /* Quitar la flecha del botón del acordeón */
 .accordion-button::after {
+  border-radius: 10px;
   display: none;
   outline: none; /* Elimina el borde de enfoque */
   box-shadow: none; /* Elimina cualquier sombra */
-  background-color: #bdbbbb; /* Opcional: asegura que el fondo sea transparente */
+  background-color: #ccccccbd; /* Opcional: asegura que el fondo sea transparente */
 }
 
 .comment {
@@ -331,7 +340,7 @@ svg {
 }
 .comment-form {
   display: flex;
-  align-items: center;
+  justify-content: space-around;
   margin-top: 20px;
 }
 
@@ -352,15 +361,16 @@ svg {
   background-color: #20274e;
   color: #fff;
   border: none;
-  padding: 10px 20px;
+  padding: 10px 25px;
   border-radius: 20px;
   margin-left: 10px;
+  margin-bottom: 10px;
 
   cursor: pointer;
 }
 
 .comment-form button:hover {
-  background-color: #0056b3;
+  background-color: #5d5d5e;
 }
 
 /* Estilos Responsivos */
