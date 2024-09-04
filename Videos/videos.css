@@ -543,3 +543,63 @@ svg {
   padding: 5px;
   margin-left: 20px;
 }
+
+@media (max-width: 887px) {
+  .burgermenu {
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+  }
+  .abrir-menu {
+    display: block;
+    border: 0;
+    font-size: 30px;
+    color: #20274e;
+  }
+
+  .burgermenu .menu-responsive {
+    display: none;
+    height: 100vh;
+    width: 100vw;
+    z-index: 9;
+    background-color: rgba(49, 49, 49, 0.99);
+    padding: 1rem;
+    position: fixed;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transform: translateX(-100%); /* Initial position off-screen */
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  }
+  .cerrar-menu {
+    border: 0;
+    border-radius: 2px;
+    font-size: 30px;
+    margin-left: 90%;
+    color: #20274e;
+  }
+  .cerrar-menu:hover {
+    color: #fff;
+    background-color: #bd1e26;
+  }
+  .menu-responsive span {
+    padding: 1rem;
+    font-size: 3rem;
+  }
+  .menu-responsive a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    font-size: 24px;
+    align-items: center;
+  }
+  .menu-responsive a:hover {
+    color: #9298b886;
+  }
+  .home-menu,
+  .video-menu,
+  .article-menu {
+    display: none;
+  }
+}

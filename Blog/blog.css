@@ -118,6 +118,85 @@ svg {
   background-color: rgb(239, 239, 239);
   position: relative;
 }
+.content {
+  display: flex;
+  flex-wrap: wrap; /* Asegura que los elementos se envuelvan si hay espacio limitado */
+  gap: 1rem; /* Agrega espacio entre las tarjetas */
+  padding: 1rem; /* Espacio alrededor del contenido */
+}
+.content .wallpaper {
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.content .wallpaper img {
+  width: 100vw;
+  z-index: -1;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  align-items: start;
+  position: absolute;
+  top: 100%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.01);
+  border-radius: 12px;
+}
+.text h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  text-shadow: 0px 4px rgba(0, 0, 0, 0.9);
+}
+.text p {
+  font-size: 16px;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.9);
+}
+.button-blogs {
+  border: 0;
+  border-radius: 2px;
+}
+.button-blogs:hover {
+  scale: 1.05;
+}
+.button-blogs i {
+  color: #ce881f;
+}
+.cards {
+  display: grid;
+  margin: auto;
+  grid-template-columns: auto auto auto;
+}
+.card {
+  margin: 20px;
+}
+.card-img-container {
+  position: relative;
+}
+
+.card-img-top {
+  width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+  height: auto; /* Mantiene la relación de aspecto de la imagen */
+}
+
+.card-text {
+  text-shadow: 1px 1px rgba(0, 0, 0, 1);
+  position: absolute;
+  bottom: 10px; /* Ajusta según sea necesario */
+  left: 0; /* Ajusta según sea necesario */
+  background: rgba(0, 0, 0, 0.1); /* Fondo semitransparente para el texto */
+  color: #fff; /* Color del texto */
+  padding: 10px; /* Espacio alrededor del texto */
+  border-radius: 5px; /* Opcional: bordes redondeados */
+}
+
+.card-title {
+  color: #fff;
+}
 
 /* Estilos Responsivos */
 @media (max-width: 1024px) {
@@ -162,31 +241,7 @@ svg {
     margin-top: 10px;
   }
 }
-.events ul {
-  display: flex;
-  list-style-type: none;
-  justify-content: center;
-  padding: 10px;
-  margin: auto;
-  margin-left: 20px;
-}
-.events ul img {
-  width: 60px;
-  height: 55px;
-  margin: auto;
-  margin-left: 40px;
-  cursor: pointer;
-}
-.events ul img:hover {
-  scale: 1.05;
-}
-.title-events {
-  margin-left: 20px;
-  margin-top: 10px;
-  font-size: 30px;
-  color: #20274e;
-  font-family: "Bebas Neue", sans-serif;
-}
+
 @media (max-width: 580px) {
   .logo {
     width: 80px; /* Reduce el tamaño del logo en pantallas más pequeñas */
@@ -227,66 +282,12 @@ svg {
     display: flex;
   }
 }
-.slider {
-  width: 50%;
-  padding: 0;
-  margin: 0;
-}
-.diapositivas {
-  border-radius: 20px;
-  min-width: 100%;
-  max-width: 100%;
-}
-.diapositivas img {
-  border-radius: 20px;
-  min-height: 300px;
-  max-height: 300px;
-}
+
 .content {
   padding: 0;
   margin: 0;
   display: flex;
   flex-direction: row;
-}
-.videos {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-}
-.desvideo {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-items: center;
-}
-.desvideo img {
-  margin-left: 10px;
-  margin-top: 0px;
-  padding: 0px;
-  width: 30px;
-  height: 30px;
-}
-.desvideo-title {
-  margin: 5px;
-  margin-left: 15px;
-  font-size: 14px;
-}
-.title-videos {
-  margin-left: 20px;
-  font-size: 30px;
-  color: #20274e;
-  font-family: "Bebas Neue", sans-serif;
-}
-.allvideos {
-  display: grid;
-  grid-template-columns: auto auto;
-  gap: 10px;
-  align-content: center;
-}
-.allvideos iframe {
-  border-radius: 10px;
-  margin: 5px;
-  width: 250px;
 }
 
 @media (max-width: 820px) {
@@ -301,60 +302,6 @@ svg {
     display: grid;
     grid-template-columns: auto;
   }
-  .slider {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-  }
-  .subscribe {
-    display: none;
-  }
-  .text {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .diapositivas {
-    margin: auto;
-    border-radius: 20px;
-    min-width: 90%;
-    max-width: 90%;
-  }
-  .diapositivas img {
-    border-radius: 20px;
-    min-width: 100%;
-    max-width: 100%;
-    min-height: 300px;
-    max-height: 300px;
-  }
-  .title-videos {
-    margin-left: 20px;
-    margin-top: 20px;
-    font-size: 30px;
-    color: #20274e;
-    font-family: "Bebas Neue", sans-serif;
-  }
-  .videos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin: auto;
-  }
-
-  .allvideos {
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 10px;
-    align-content: center;
-  }
-  .allvideos iframe {
-    border-radius: 10px;
-    margin: 10px;
-    width: 350px;
-    height: 250px;
-  }
 }
 @media (max-width: 540px) {
   .content {
@@ -363,122 +310,6 @@ svg {
     display: grid;
     grid-template-columns: auto;
   }
-  .slider {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-  }
-  .diapositivas {
-    margin: auto;
-    border-radius: 20px;
-    min-width: 90%;
-    max-width: 90%;
-  }
-  .diapositivas img {
-    border-radius: 20px;
-    min-width: 100%;
-    max-width: 100%;
-    min-height: 260px;
-    max-height: 260px;
-  }
-  .title-videos {
-    margin-left: 20px;
-    margin-top: 20px;
-    font-size: 30px;
-    color: #20274e;
-    font-family: "Bebas Neue", sans-serif;
-  }
-  .videos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin: auto;
-  }
-  .allvideos {
-    display: grid;
-    grid-template-columns: auto;
-    gap: 10px;
-    align-content: center;
-  }
-  .allvideos iframe {
-    border-radius: 10px;
-    margin: 10px;
-    width: 450px;
-    height: 350px;
-  }
-}
-@media (min-width: 1368px) {
-  .slider {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    margin-left: 10px;
-  }
-  .diapositivas {
-    margin: auto;
-    border-radius: 20px;
-    min-width: 100%;
-    max-width: 100%;
-  }
-  .diapositivas img {
-    border-radius: 20px;
-    min-width: 100%;
-    max-width: 100%;
-    min-height: 360px;
-    max-height: 360px;
-  }
-  .title-videos {
-    margin-left: 20px;
-    margin-top: 20px;
-    font-size: 30px;
-    color: #20274e;
-    font-family: "Bebas Neue", sans-serif;
-  }
-  .videos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin: auto;
-  }
-  .allvideos {
-    display: grid;
-    grid-template-columns: auto auto;
-
-    gap: 10px;
-    align-content: center;
-  }
-  .allvideos iframe {
-    border-radius: 10px;
-
-    margin: 10px;
-    width: 350px;
-    height: 250px;
-  }
-}
-.subscribe {
-  margin: 10px;
-  align-items: center;
-}
-
-.subscribe input {
-  background-color: rgb(210, 210, 210);
-  border: none;
-  border-radius: 5px;
-  outline: none;
-  width: 300px;
-}
-.submit {
-  width: 100px;
-  font-family: "Bebas Neue", sans-serif;
-  color: #ffffff;
-  outline: none;
-  border: none;
-  border-radius: 50px;
-  background-color: #20274e;
-  padding: 5px;
-  margin-left: 20px;
 }
 
 @media (max-width: 887px) {
