@@ -197,6 +197,34 @@ svg {
 .card-title {
   color: #fff;
 }
+.footer {
+  background: #c9c8c8;
+  padding: 10px 40px;
+  text-align: center;
+}
+.footer-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.social-networks i {
+  font-size: 20px;
+  margin: 0px 10px;
+  cursor: pointer;
+}
+.footer-middle {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.footer-middle ul {
+  text-align: center;
+  list-style: none;
+}
+.footer-middle ul a {
+  text-decoration: none;
+  color: #20274e;
+}
 
 /* Estilos Responsivos */
 @media (max-width: 1024px) {
