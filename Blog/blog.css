@@ -398,4 +398,10 @@ svg {
   .article-menu {
     display: none;
   }
+  .footer-middle {
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+  }
 }

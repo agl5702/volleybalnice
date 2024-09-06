@@ -354,4 +354,10 @@ article ul li {
     width: 90vw;
     text-align: justify;
   }
+  .footer-middle {
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+  }
 }
