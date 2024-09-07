@@ -19,7 +19,7 @@ nav {
 }
 
 nav ul {
-  margin-right: 50px;
+  margin-right: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -56,8 +56,6 @@ svg {
   color: #000000;
 }
 .right a:hover {
-  background-color: rgb(203, 204, 204);
-  border-radius: 2px;
   color: #20274e;
 }
 .text {
@@ -100,22 +98,32 @@ svg {
 
 .search-container .search-icon {
   width: 70px;
-  background-color: rgb(239, 239, 239);
   transition: all 1s;
   position: relative;
 }
 
 .search-container .search-icon:hover {
-  background-color: rgb(210, 210, 210);
+  cursor: pointer;
 }
 
+.home-menu,
+.article-menu,
+.video-menu,
 .home-menu,
 .article-menu,
 .video-menu,
 .user-menu {
   border-radius: 50%;
   margin-left: 1rem;
-  background-color: rgb(239, 239, 239);
+  position: relative;
+}
+.home-menu:hover,
+.article-menu:hover,
+.video-menu:hover,
+.user-menu:hover {
+  border-radius: 50%;
+  background-color: #cccbcbd4;
+  scale: 1.02;
   position: relative;
 }
 .content {
@@ -137,23 +145,32 @@ svg {
   display: flex;
   flex-direction: column;
   text-align: justify;
-  align-items: start;
+  align-items: flex-start;
   position: absolute;
-  top: 100%;
-  left: 40%;
-  transform: translate(-50%, -50%);
+  top: 80%;
+  left: 5%;
+  right: 5%;
   color: white;
-  background-color: rgba(0, 0, 0, 0.01);
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    360deg,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(0, 0, 0, 0.6558998599439776) 57%,
+    rgba(26, 27, 27, 0.2553396358543417) 100%
+  ); /* Mejorar contraste para mayor legibilidad */
   border-radius: 12px;
+  padding: 1rem;
+  max-width: 90%;
 }
 .text h1 {
-  font-size: 2.5rem;
+  font-size: 2rem; /* Ajustado para pantallas pequeñas */
   font-weight: 800;
   margin-bottom: 1rem;
   text-shadow: 0px 4px rgba(0, 0, 0, 0.9);
 }
+
 .text p {
-  font-size: 16px;
+  font-size: 1rem;
   text-shadow: 1px 1px rgba(0, 0, 0, 0.9);
 }
 .button-blogs {
@@ -173,6 +190,10 @@ svg {
 }
 .card {
   margin: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+.card:hover {
+  transform: scale(1.03);
 }
 .card-img-container {
   position: relative;
@@ -186,9 +207,15 @@ svg {
 .card-text {
   text-shadow: 1px 1px rgba(0, 0, 0, 1);
   position: absolute;
-  bottom: 10px; /* Ajusta según sea necesario */
+  bottom: 0px; /* Ajusta según sea necesario */
   left: 0; /* Ajusta según sea necesario */
-  background: rgba(0, 0, 0, 0.1); /* Fondo semitransparente para el texto */
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    360deg,
+    rgba(22, 22, 22, 0.873) 0%,
+    rgba(158, 158, 158, 0.656) 57%,
+    rgba(164, 162, 162, 0.079) 100%
+  ); /* Fondo semitransparente para el texto */
   color: #fff; /* Color del texto */
   padding: 10px; /* Espacio alrededor del texto */
   border-radius: 5px; /* Opcional: bordes redondeados */
@@ -233,7 +260,6 @@ svg {
   }
   .search-container .search-icon {
     width: 70px;
-    background-color: rgb(239, 239, 239);
     transition: all 1s;
     position: relative;
   }
@@ -246,7 +272,6 @@ svg {
   }
   .search-container .search-icon {
     width: 70px;
-    background-color: rgb(239, 239, 239);
     position: relative;
   }
   .left,
@@ -277,16 +302,16 @@ svg {
   .search-container input {
     display: none; /* Reduce el tamaño del buscador en pantallas medianas */
   }
+
   .search-container .search-icon {
     width: 70px;
-    background-color: rgb(239, 239, 239);
     position: relative;
   }
   .search-icon {
-    margin-left: 150%;
+    left: 120%;
   }
   .user-menu {
-    margin-left: 100%;
+    right: 0%;
   }
   .home-menu,
   .article-menu,
@@ -331,16 +356,18 @@ svg {
     grid-template-columns: auto;
   }
 }
-@media (max-width: 540px) {
-  .content {
-    padding: 0;
-    margin: 0;
-    display: grid;
-    grid-template-columns: auto;
-  }
-}
 
 @media (max-width: 887px) {
+  .cards {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .text {
+    display: none;
+  }
+  .wallpaper {
+    display: none;
+  }
   .burgermenu {
     display: flex;
     padding: 1rem;
@@ -403,5 +430,17 @@ svg {
     display: grid;
     grid-template-columns: auto auto auto;
     justify-content: center;
+  }
+}
+@media (max-width: 640px) {
+  .content {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: auto;
   }
 }
